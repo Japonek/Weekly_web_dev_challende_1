@@ -1,4 +1,43 @@
+@font-face {
+  font-family: 'Titillium';
+  src: local('Titillium Bold'), local('Titillium-Bold'),
+  url('../fonts/Titillium-Bold.woff2') format('woff2'),
+  url('../fonts/Titillium-Bold.woff') format('woff'),
+  url('../fonts/Titillium-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Titillium';
+  src: local('Titillium Regular'), local('Titillium-Regular'),
+  url('../fonts/Titillium-Regular.woff2') format('woff2'),
+  url('../fonts/Titillium-Regular.woff') format('woff'),
+  url('../fonts/Titillium-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Titillium';
+  src: local('Titillium Light'), local('Titillium-Light'),
+  url('../fonts/Titillium-Light.woff2') format('woff2'),
+  url('../fonts/Titillium-Light.woff') format('woff'),
+  url('../fonts/Titillium-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+
 h1{
-  font-size: 80px;
-  color:red;
+  font-family: "Titillium", Arial,sans-serif;;
+  font-weight: 300;
+  font-size: 20px;
+
+}
+h2{
+  font-family: 'Titillium', Arial,sans-serif;;
+  font-weight: 500;
+  font-size: 20px;
 }
