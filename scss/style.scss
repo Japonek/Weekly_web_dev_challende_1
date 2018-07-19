@@ -42,11 +42,13 @@
 
 body {
   background: url("../img/hot-vs-cold-2560x1440-copy.png") no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 
 .header-img {
-  margin: 0 auto;
+  margin: 55px auto 13px auto;
   background: url("../img/header-img.png") no-repeat;
   background-size: cover;
   width: 430px;
@@ -98,16 +100,12 @@ body {
 .icon-location {
   background: url("../img/glyphicons-google-maps.png") no-repeat center;
 }
-.input-row{
-  display: flex;
-  position: relative;
-  margin-top: 20px;
-}
+
 /*----ICONS END---*/
 
 .forms-container{
   margin: 0 auto;
-  width: 940px;
+  width: 920px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -155,7 +153,17 @@ form {
 
 }
 
+.input-row{
+  display: flex;
+  position: relative;
+  margin-bottom: 20px;
 
+
+}
+
+form .input-row:last-child{
+  margin: 0;
+}
 
 input {
   padding: 10px 22px ;
@@ -186,7 +194,7 @@ select{
 
 .input-label{
   display: inline-block;
-  margin: 12px 0;
+  margin: 0 0 12px 0;
   label{
     font-size: 17px;
   }
@@ -280,7 +288,41 @@ textarea[name="message"]{
   color:#000;
   background-color: transparent;
 }
+footer{
+  margin: 0 auto;
 
+.footer{
+  background-image: url("../img/footer-img.png");
+  width: 353px;
+  margin: 51px auto 15px auto;
+  height: 78px;
+  display: table;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+  position: relative;
+  -webkit-transition: opacity 150ms;
+  transition: opacity 150ms;
+  &:hover{
+  opacity: 1;
+  filter: alpha(opacity=100);
+
+}
+}
+.footer-company-name{
+  background-image: url("../img/footer--company-name.png");
+  width: 246px;
+  height: 18px;
+  margin: 50px auto 15px auto;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+  -webkit-transition: opacity 150ms;
+  transition: opacity 150ms;
+  &:hover{
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+}
+}
 
 @media screen and (max-width: 975px) {
   .forms-container{
