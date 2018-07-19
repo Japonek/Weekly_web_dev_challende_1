@@ -1,65 +1,153 @@
 <!DOCTYPE html>
-<html lang="pl-PL" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Weekly web dev challenge</title>
-    <meta name="author" content="Igor Kłusak" />
-    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="author" content="Igor Kłusak"/>
+    <meta name="viewport" id="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
 
 
-    <script src="js/main.js"></script>
     <link rel="stylesheet" href="css/style.css">
-
 
 
 </head>
 
 
-
-
 <body>
-<h1>
-    dada
-</h1>
-<h2>
-    dada
-</h2>
-<form action="#" id="Register_form">
-    <fieldset>
-        <legend>Register form</legend>
-            <label for="name"><i class="fa fa-user icon"></i>
-                <input class="form-control" type="text" placeholder="Username" id="name" name="name"/>
-            </label>
+<header>
+    <section class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="header-img">
 
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+
+
+<div class="forms-container">
+    <form action="#" id="Register_form">
+        <h2>Register form</h2>
+        <fieldset>
+            <label for="name">
+                <div class="input-row">
+                    <div class="input">
+                        <div class="icon icon-user"></div>
+                        <input type="text" placeholder="Username" id="name" name="name"/>
+                    </div>
+                </div>
+            </label>
             <label for="password">
-                <input class="form-control" type="password" placeholder="Password" id="password" name="password"/>
+                <div class="input-row">
+                    <div class="input">
+                        <div class="icon icon-lock"></div>
+                        <input type="password" placeholder="Password" id="password"
+                               name="password"/>
+                    </div>
+                </div>
             </label>
-
             <label for="repeat-password">
-                <input class="form-control" type="password" placeholder="Confirm Password" id="repeat-password"
-                       name="repeat-password"/>
+                <div class="input-row">
+                    <div class="input">
+                        <div class="icon icon-lock"></div>
+                        <input type="password" placeholder="Confirm Password" id="repeat-password"
+                               name="repeat-password"/>
+                    </div>
+                </div>
             </label>
-
             <label for="email">
-            <input class="form-control" type="email" placeholder="email" name="mail" id="email"/>
+                <div class="input-row">
+                    <div class="input">
+                        <div class="icon icon-email"></div>
+                        <input type="email" placeholder="email" name="mail" id="email"/>
+                    </div>
+                </div>
             </label>
-
             <label for="location">
-                <select class="form-control" name="location" id="location">
-                    <option value="" disabled selected>Your Location</option>
-                    <option value="hurr">Durr</option>
-                </select>
+                <div class="input-row">
+                    <div class="input">
+                        <div class="icon icon-location"></div>
+                        <select name="location" id="location">
+                            <option value="" disabled selected>Your Location</option>
+                            <option value="hurr">Durr</option>
+                        </select>
+                    </div>
+                </div>
             </label>
-
-
-            <input class="checkbox" type="checkbox" name="chceckbox"/>
-            I have read and accept the terms of use
-
-            <button type=submit" form="Register_form" value="Sign Up">
+            <div class="input-label">
+                <input type="checkbox" id="terms" name="terms" value="terms">
+                <label for="terms"><span></span>I have read and accept the terms of use.</label>
+            </div>
+            <button class="btn btn-active btn-big" type="submit" form="Register_form" value="Sign Up">
                 Sign Up
             </button>
+        </fieldset>
+    </form>
+    <form action="#" id="Sign_in_form">
+        <h2>Sign In Form</h2>
+        <fieldset>
+            <label for="name">
+                <div class="input-row">
+                    <div class="input">
+                        <div class="icon icon-user"></div>
+                        <input type="text" placeholder="Username" id="name" name="name"/>
+                    </div>
+                </div>
+            </label>
+            <label for="password">
+                <div class="input-row">
+                    <div class="input">
+                        <div class="icon icon-lock"></div>
+                        <input type="password" placeholder="Password" id="password"
+                               name="password"/>
+                    </div>
+                </div>
+            </label>
 
-    </fieldset>
-</form>
+            <div class="input-label">
+                <input type="checkbox" id="sign_in" name="sign_in" value="sign_in">
+                <label for="sign_in"><span></span>Remember me</label>
+                <button class="btn btn-active btn-small right" type="submit" form="Sign_In_form" value="Sign In">
+                    Sign In
+                </button>
+            </div>
+        </fieldset>
+    </form>
+    <form action="#" id="Recover_form">
+        <h2>Sign In Form</h2>
+        <fieldset>
+            <label for="recover_email">
+                <div class="input-row">
+                    <div class="input">
+                        <div class="icon icon-email"></div>
+                        <input type="email" placeholder="Enter your Email" name="mail" id="recover_email"/>
+                    </div>
+                </div>
+            </label>
+            <label for="recover_phone">
+                <div class="input-row">
+                    <div class="input">
+                        <div class="icon icon-phone"></div>
+                        <input type="tel" placeholder="Enter your Phone Number" name="mail" id="recover_phone"/>
+                    </div>
+                </div>
+            </label>
+            <div class="input-label">
+                <button class="btn btn-active btn-small left" type="submit" form="Recover_form" value="Send">
+                    Send
+                </button>
+                <button class="btn btn-active btn-small right" type="submit" form="Recover_form" value="Done" disabled>
+                    Done
+                </button>
+            </div>
+
+
+        </fieldset>
+    </form>
+</div>
+<script src="js/main.js"></script>
 </body>
 </html>
