@@ -17,75 +17,112 @@
 <body>
 <header>
     <section class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="header-img">
 
-                </div>
-            </div>
+        <div class="header-img">
+
         </div>
     </section>
 </header>
 
 
 <div class="forms-container">
-    <form action="#" id="Register_form">
-        <h2>Register form</h2>
-        <fieldset>
-            <label for="name">
-                <div class="input-row">
-                    <div class="input">
-                        <div class="icon icon-user"></div>
-                        <input type="text" placeholder="Username" id="name" name="name"/>
+    <div class="column">
+        <form action="#" id="Register_form">
+            <h2>Register form</h2>
+            <fieldset>
+                <label for="name">
+                    <div class="input-row">
+                        <div class="input">
+                            <div class="icon icon-user"></div>
+                            <input type="text" placeholder="Username" id="name" name="name"/>
+                        </div>
                     </div>
-                </div>
-            </label>
-            <label for="password">
-                <div class="input-row">
-                    <div class="input">
-                        <div class="icon icon-lock"></div>
-                        <input type="password" placeholder="Password" id="password"
-                               name="password"/>
+                </label>
+                <label for="password">
+                    <div class="input-row">
+                        <div class="input">
+                            <div class="icon icon-lock"></div>
+                            <input type="password" placeholder="Password" id="password"
+                                   name="password"/>
+                        </div>
                     </div>
-                </div>
-            </label>
-            <label for="repeat-password">
-                <div class="input-row">
-                    <div class="input">
-                        <div class="icon icon-lock"></div>
-                        <input type="password" placeholder="Confirm Password" id="repeat-password"
-                               name="repeat-password"/>
+                </label>
+                <label for="repeat-password">
+                    <div class="input-row">
+                        <div class="input">
+                            <div class="icon icon-lock"></div>
+                            <input type="password" placeholder="Confirm Password" id="repeat-password"
+                                   name="repeat-password"/>
+                        </div>
                     </div>
-                </div>
-            </label>
-            <label for="email">
-                <div class="input-row">
-                    <div class="input">
-                        <div class="icon icon-email"></div>
-                        <input type="email" placeholder="email" name="mail" id="email"/>
+                </label>
+                <label for="email">
+                    <div class="input-row">
+                        <div class="input">
+                            <div class="icon icon-email"></div>
+                            <input type="email" placeholder="email" name="mail" id="email"/>
+                        </div>
                     </div>
-                </div>
-            </label>
-            <label for="location">
-                <div class="input-row">
-                    <div class="input">
-                        <div class="icon icon-location"></div>
-                        <select name="location" id="location">
-                            <option value="" disabled selected>Your Location</option>
-                            <option value="hurr">Durr</option>
-                        </select>
+                </label>
+                <label for="location">
+                    <div class="input-row">
+                        <div class="input">
+                            <div class="icon icon-location"></div>
+                            <select name="location" id="location">
+                                <option value="" disabled selected>Your Location</option>
+                                <option value="hurr">Durr</option>
+                            </select>
+                        </div>
                     </div>
+                </label>
+                <div class="input-label">
+                    <input type="checkbox" id="terms" name="terms" value="terms">
+                    <label for="terms"><span></span>I have read and accept the terms of use.</label>
                 </div>
-            </label>
-            <div class="input-label">
-                <input type="checkbox" id="terms" name="terms" value="terms">
-                <label for="terms"><span></span>I have read and accept the terms of use.</label>
-            </div>
-            <button class="btn btn-active btn-big" type="submit" form="Register_form" value="Sign Up">
-                Sign Up
-            </button>
-        </fieldset>
-    </form>
+                <button class="btn btn-active btn-big" type="submit" form="Register_form" value="Sign Up">
+                    Sign Up
+                </button>
+            </fieldset>
+        </form>
+
+        <form action="#" id="Send_form">
+            <h2>Send Email</h2>
+            <fieldset>
+                <label for="Send_name">
+                    <div class="input-row">
+                        <div class="input">
+                            <div class="icon icon-user"></div>
+                            <input type="text" placeholder="Username" id="Send_name" name="name"/>
+                        </div>
+                    </div>
+                </label>
+                <label for="Send_email">
+                    <div class="input-row">
+                        <div class="input">
+                            <div class="icon icon-email"></div>
+                            <input type="email" placeholder="Your Email" name="mail" id="Send_email"/>
+                        </div>
+                    </div>
+                </label>
+
+                <textarea form="send_email" name="message" placeholder="Type your message ..."></textarea>
+
+
+                <div class="input-label">
+                    <input type="checkbox" id="send_copy" name="send_copy" value="send_copy">
+                    <label for="send_copy"><span></span>Send a copy to my Email</label>
+                </div>
+
+                <div class="input-label">
+                    <button class="btn btn-active btn-big left" type="submit" form="Send_form" value="Send Email">
+                        Send Email
+                    </button>
+                </div>
+            </fieldset>
+        </form>
+
+    </div>
+    <div class="column">
     <form action="#" id="Sign_in_form">
         <h2>Sign In Form</h2>
         <fieldset>
@@ -145,7 +182,6 @@
             </div>
         </fieldset>
     </form>
-    </form>
     <form action="#" id="Subscribe_form">
         <h2>Subscribe Form</h2>
         <fieldset>
@@ -162,42 +198,16 @@
                 <button class="btn btn-active btn-small left" type="submit" form="Subscribe_form" value="Subscribe">
                     Subscribe
                 </button>
-                <button class="btn btn-decline btn-small right" type="submit" form="Subscribe_form" value="No, Thanks" >
+                <button class="btn btn-decline btn-small right" type="submit" form="Subscribe_form" value="No, Thanks">
                     No, Thanks
                 </button>
             </div>
         </fieldset>
     </form>
+    </div>
 
 
-    </form>
-    <form action="#" id="Send_form">
-        <h2>Send Email</h2>
-        <fieldset>
-            <label for="Send_name">
-            <div class="input-row">
-                <div class="input">
-                    <div class="icon icon-user"></div>
-                    <input type="text" placeholder="Username" id="Send_name" name="name"/>
-                </div>
-            </div>
-            </label>
-            <label for="Send_email">
-                <div class="input-row">
-                    <div class="input">
-                        <div class="icon icon-email"></div>
-                        <input type="email" placeholder="Your Email" name="mail" id="Send_email"/>
-                    </div>
-                </div>
-            </label>
 
-            <div class="input-label">
-                <button class="btn btn-active btn-big left" type="submit" form="Send_form" value="Send Email">
-                    Send Email
-                </button>
-            </div>
-        </fieldset>
-    </form>
 
 </div>
 <script src="js/main.js"></script>

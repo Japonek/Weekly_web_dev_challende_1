@@ -105,8 +105,22 @@ body {
 }
 /*----ICONS END---*/
 
+.forms-container{
+  margin: 0 auto;
+  width: 940px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
 form {
   width: 420px;
+  margin-bottom: 60px;
   h2 {
     font-size: 2rem;
     font-weight: 500;
@@ -252,5 +266,51 @@ input[type="checkbox"]:checked + label span {
   float: left;
 }
 
+textarea[name="message"]{
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  word-break: break-word;
+  line-height: 20px;
+  height: 203px;
+  padding: 14px;
+  margin: 16px 0;
+  border-radius: 3px;
+  border: solid 1px #c3c3c3;
+  color:#000;
+  background-color: transparent;
+}
 
+
+@media screen and (max-width: 975px) {
+  .forms-container{
+    margin: 0 auto;
+    width:750px;
+  }
+  form{
+    width: 304px;
+  }
+  .btn-small{
+    width: 120px;
+  }
+}
+
+
+@media screen and (max-width: 738px) {
+  .forms-container{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+  }
+  form{
+    width: 100%;
+  }
+  .forms-container{
+    width: 60%;
+    margin: 0 auto;
+  }
+}
 
